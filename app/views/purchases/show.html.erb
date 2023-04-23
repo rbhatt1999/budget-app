@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @purchase %>
+
+<div>
+  <%= link_to "Edit this purchase", edit_purchase_path(@purchase) %> |
+  <%= link_to "Back to purchases", purchases_path %>
+
+  <%= button_to "Destroy this purchase", @purchase, method: :delete %>
+</div>
