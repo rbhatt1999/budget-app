@@ -14,7 +14,6 @@
 <%= render @category %>
 
 <div class= "purchases-list">
-<div>
 <%@purchases.each do |purchases|%>
 <div class= "category-item">
   <p><%= purchases.name %></p>
@@ -27,5 +26,4 @@
     New Transaction
   </div>
 <% end %>
-</div>
 </section>

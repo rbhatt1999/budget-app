@@ -3,4 +3,5 @@ class Category < ApplicationRecord
   has_and_belongs_to_many :purchases
 
   validates :name, presence: true
+  validates :name, length: { minimum: 3, maximum: 50 }
 end
