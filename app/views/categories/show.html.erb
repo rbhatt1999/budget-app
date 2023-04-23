@@ -22,7 +22,7 @@
 </div>
 <%end%>
 </div>
-<%= link_to new_purchase_path, class: "new-catagory-container" do %>
+<%= link_to new_purchase_path(:cat_id => @category.id), class: "new-catagory-container" do %>
   <div>
     New Transaction
   </div>

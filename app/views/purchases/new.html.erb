@@ -30,7 +30,11 @@
   </div>
 
   <div class = "field last-field">
+  <%if @category %>
+    <%= form.select :category_id, @categories.collect { |c| [c.name, c.id] }, { selected: @category.id } %>
+  <%else%>
     <%= form.select :category_id, @categories.collect { |c| [c.name, c.id] } %>
+  <%end%>
   </div>
   
   </div>

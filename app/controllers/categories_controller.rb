@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  load_and_authorize_resource
 
   # GET /categories or /categories.json
   def index

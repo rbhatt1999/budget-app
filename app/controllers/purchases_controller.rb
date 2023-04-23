@@ -1,11 +1,12 @@
 class PurchasesController < ApplicationController
-  before_action :set_purchase, only: %i[ show edit update destroy ]
-
-
+  load_and_authorize_resource
   # GET /purchases/new
   def new
     @purchase = Purchase.new
-    @categories = Category.all
+    @categories = Category.where(author: current_user)
+    if(params[:cat_id])
+      @category = Category.find(params[:cat_id])
+    end
   end
 
   # POST /purchases or /purchases.json
