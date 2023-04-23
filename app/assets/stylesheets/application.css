@@ -19,17 +19,65 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Proxima Nova', sans-serif;
+}
 
+body {
+  background-color: #f5f6f8;
+}
+
+h2, h3, h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 h1 {
   text-align: center;
 }
 
+.text-align-center {
+  text-align: center;
+  align-self: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-field {
+  margin-top: 5px;
+}
+
+.new_user input {
+  border: none;
+  border-radius: 0;
+}
+
+.grey-color {
+  color: var(--grey);
+}
+
+.light-grey-color {
+  color: #c3c3c3;
+  font-weight: lighter;
+}
+
+.field {
+  border-top: rgb(232, 232, 232) 1px solid;
+}
+
+.field:last-child {
+  border-bottom: rgb(232, 232, 232) 1px solid;
+}
+
  :root {
   --blue: #3778c2;
   --green: #5fb523;
   --grey: #434b54;
+  --light-grey: #efefef;
  }
 
  a {
@@ -83,4 +131,51 @@ h1 {
   text-align: center;
   font-weight: 700;
   color: var(--grey);
+ }
+
+ .navbar-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--blue);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .navbar-container i {
+  font-size: 1.5rem;
+ }
+
+ .white-color {
+  color: white!important;
+ }
+
+ .new_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+ }
+
+ .new_user div input {
+  width: 100%;
+  height: 40px;
+ }
+
+ input::placeholder {
+  color: #c5c5c5;
+ }
+
+ .login-button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  font-weight: lighter;
+ }
+
+ .forget-password {
+  margin-top: 20px;
  }
