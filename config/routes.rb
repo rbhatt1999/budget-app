@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :users
-  
-  resources :categories do
-    resources :purchases
-  end
+  resources :categories, only: [:index, :show, :new, :create]
+  resources :purchases, only: [:new, :create]
 
   get 'home' => 'home#index'
 

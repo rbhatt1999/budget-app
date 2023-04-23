@@ -1,9 +1,41 @@
-<h1>New purchase</h1>
+<section class="flex-column height-full">
+<nav class="navbar-container justify-content-between">
+  <%=link_to :back do%>
+  <i class="fa-sharp fa-solid fa-arrow-left white-color"></i>
+  <%end%>
+  <h5 class="white-color">ADD TRANSACTION</h5>
+  <div></div>
+</nav>
 
-<%= render "form", purchase: @purchase %>
+<%= form_with model: @purchase, url: purchases_path, method: :post, class: "new-category" do |form| %>
+  <div>
+  <% if @purchase.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@purchase.errors.count, "error") %> prohibited this purchase from being saved:</h2>
 
-<br>
+      <ul>
+        <% @purchase.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-<div>
-  <%= link_to "Back to purchases", purchases_path %>
-</div>
+  <div class="field first-field">
+    <%= form.text_field :name, placeholder: "Transaction Name"%>
+  </div>
+
+  <div class= "field">
+    <%= form.number_field :amount, placeholder: "Amount" %>
+  </div>
+
+  <div class = "field last-field">
+    <%= form.select :category_id, @categories.collect { |c| [c.name, c.id] } %>
+  </div>
+  
+  </div>
+  <div class="save-catagory">
+    <%= form.submit "Save", class: "new-catagory-container" %>
+  </div>
+<% end %>
+</section>

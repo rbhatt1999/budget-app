@@ -75,6 +75,11 @@ h1 {
   height: 40px;
 }
 
+.new-category div select {
+  width: 100%;
+  height: 40px;
+}
+
 .grey-color {
   color: var(--grey);
 }
@@ -257,4 +262,16 @@ h1 {
   margin: 10px;
   padding: 10px;
   border: 2px solid white;
+ }
+
+ .purchases-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  overflow-y: scroll;
+ }
+
+ .purchases-list div:first-child {
+  overflow-y: scroll;
  }

@@ -11,7 +11,12 @@
 
   <p>
     <strong>User:</strong>
-    <%= purchase.user_id %>
+    <%= purchase.author_id %>
+  </p>
+
+  <p>
+    <strong>category:</strong>
+    <%= purchase.categories.last.name %>
   </p>
 
 </div>
