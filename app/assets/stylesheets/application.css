@@ -209,7 +209,6 @@ h1 {
   flex-direction: column;
   align-self: center;
   width: 100%;
-  max-width: 600px;
   flex: 1;
   overflow-y: scroll;
  }
@@ -235,7 +234,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 600px;
   background-color: var(--green);
   padding: 10px;
  }
@@ -272,6 +270,6 @@ h1 {
   overflow-y: scroll;
  }
 
- .purchases-list div:first-child {
+ .y-scroll {
   overflow-y: scroll;
  }
