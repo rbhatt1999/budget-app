@@ -1,14 +1,22 @@
-<p style="color: green"><%= notice %></p>
+<section class="flex-column height-full">
+<nav class="navbar-container justify-content-between">
+  <div></div>
+  <h5 class="white-color">CATEGORIES</h5>
+  <%= button_to destroy_user_session_path, method: :delete, class:"login-button" do %>
+  <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>
+  <% end %>
+</nav>
 
-<h1>Categories</h1>
+<p class="text-align-center" style="color: green "><%= notice %></p>
 
 <div id="categories">
   <% @categories.each do |category| %>
     <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
   <% end %>
 </div>
-
-<%= link_to "New category", new_category_path %>
+<%= link_to new_category_path, class: "new-catagory-container" do %>
+  <div>
+    New Category
+  </div>
+<% end %>
+</section>

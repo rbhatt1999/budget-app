@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_23_071352) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_23_100543) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
-    t.string "icon"
+    t.string "icon", default: "https://img.freepik.com/premium-vector/grocery-food-cardboard-box-icon-isolated-white-vector-flat-illustration_623508-34.jpg"
     t.bigint "author_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

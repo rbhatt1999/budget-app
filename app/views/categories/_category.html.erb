@@ -1,17 +1,9 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
-    <%= category.name %>
+<div class="category-item" id="<%= dom_id category %>">
+  <p class= "d-flex justify-content-start align-items-center">
+    <img src="<%= category.icon %>" style = "width: 50px; height: 50px;">
+    <strong><%= category.name.capitalize() %></strong>
   </p>
-
   <p>
-    <strong>Icon:</strong>
-    <%= category.icon %>
+    Total Amount: $45
   </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= category.user_id %>
-  </p>
-
 </div>

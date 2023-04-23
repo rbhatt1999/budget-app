@@ -56,6 +56,25 @@ h1 {
   border-radius: 0;
 }
 
+.new-category {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.new-category input {
+  border: none;
+  border-radius: 0;
+}
+
+.new-category div input {
+  width: 100%;
+  height: 40px;
+}
+
 .grey-color {
   color: var(--grey);
 }
@@ -69,7 +88,7 @@ h1 {
   border-top: rgb(232, 232, 232) 1px solid;
 }
 
-.field:last-child {
+.field:last-child, .last-field {
   border-bottom: rgb(232, 232, 232) 1px solid;
 }
 
@@ -178,4 +197,64 @@ h1 {
 
  .forget-password {
   margin-top: 20px;
+ }
+
+ #categories {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: 600px;
+  flex: 1;
+  overflow-y: scroll;
+ }
+
+ .category-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .height-full {
+  height: 100vh;
+ }
+
+ .save-catagory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--green);
+  padding: 10px;
+ }
+
+ .save-catagory input {
+  width: auto!important;
+  height: auto!important;
+  padding: 10px;
+  border: 1px solid white;
+ }
+
+ .new-catagory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--green);
+  color: white;
+  font-size: 20px;
+ }
+
+
+ .new-catagory-container div {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid white;
  }
