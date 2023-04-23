@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
@@ -7,6 +5,7 @@ class Ability
     user ||= User.new # guest user (not logged in)
 
     return unless user.present?
+
     can :manage, Category, author_id: user.id
     can :manage, Purchase, author_id: user.id
     # Define abilities for the user here. For example:

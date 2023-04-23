@@ -8,13 +8,13 @@ RSpec.describe 'purchases/new', type: :view do
     @purchase = Purchase.create(name: 'Milk', amount: 10, author: @user)
     @purchase.categories << @category
     sign_in @user
-    visit new_purchase_path()
+    visit new_purchase_path
   end
   it 'render new purchase page' do
     expect(page).to have_content 'ADD TRANSACTION'
   end
   it 'click on back' do
-    visit category_path(@category)    
+    visit category_path(@category)
     find("a[class='new-catagory-container']").click
     find("a[class='back']").click
     sleep 1

@@ -4,9 +4,9 @@ class PurchasesController < ApplicationController
   def new
     @purchase = Purchase.new
     @categories = Category.where(author: current_user)
-    if(params[:cat_id])
-      @category = Category.find(params[:cat_id])
-    end
+    return unless params[:cat_id]
+
+    @category = Category.find(params[:cat_id])
   end
 
   # POST /purchases or /purchases.json
@@ -15,17 +15,17 @@ class PurchasesController < ApplicationController
     @purchase.author = current_user
     @category = Category.find(params[:purchase][:category_id])
     @purchase.categories << @category
-     if @purchase.save
-        redirect_to category_url(params[:purchase][:category_id]), notice: "Transaction was successfully created."
-     else
-        render :new, status: :unprocessable_entity
-     end
+    if @purchase.save
+      redirect_to category_url(params[:purchase][:category_id]), notice: 'Transaction was successfully created.'
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   private
 
-    # Only allow a list of trusted parameters through.
-    def purchase_params
-      params.require(:purchase).permit(:name, :amount)
-    end
+  # Only allow a list of trusted parameters through.
+  def purchase_params
+    params.require(:purchase).permit(:name, :amount)
+  end
 end
