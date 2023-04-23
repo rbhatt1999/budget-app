@@ -267,7 +267,6 @@ input::placeholder {
 .purchases-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex: 1;
   overflow-y: scroll;
 }
