@@ -13,7 +13,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Recipe-app ](#-practice-test-driven-developmenttdd-)
+- [📖 Budget App ](#-budget-app-)
   - [🛠 Built With ](#-built-with-)
   - [🛠 Tech Stack ](#-tech-stack-)
     - [Key Features ](#key-features-)
@@ -22,7 +22,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-  - [👥 Authors](#-authors)
+  - [👥 Authors](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
