@@ -13,3 +13,74 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+ :root {
+  --blue: #3778c2;
+  --green: #5fb523;
+  --grey: #434b54;
+ }
+
+ a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+ }
+
+ .blue-button {
+  display: inline;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ }
+
+ .grey-button {
+  color: var(--grey);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ }
+
+ .login-signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  align-self: center;
+  width: 100%;
+  max-width: 500px;
+ }
+
+ .home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: end;
+  gap: 150px;
+ }
+
+ .home-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--grey);
+ }
