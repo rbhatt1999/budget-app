@@ -22,7 +22,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-  - [👥 Authors](#-authors-)
+  - [👥 Authors](#-authors)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -35,7 +35,8 @@
 Budget app is an app for managing transactions with categorized lists, sign-up and login pages, and navigation buttons for moving between pages. Users can add new categories or transactions.
 
 ## 🛠 Built With <a name="built-with"></a>
-
+This app is build with Ruby on Rails and Postgresql.
+### Tech Stack <a name="tech-stack"></a>
 > <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
 > <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
 > <li><a href="https://www.postgresql.org/">Postgresql</a></li>
@@ -83,6 +84,7 @@ In order to run this project you need:
  cd budget-app
 
 ```
+### Install
 
 - Install this project with:
 
