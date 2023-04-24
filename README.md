@@ -58,7 +58,7 @@ This app is build with Ruby on Rails and Postgresql.
 
 ## 🚀 Video Presentation <a name="presentation"></a>
 
-- [Video Presentation Link](https://www.loom.com/share/a57474cdf4d04160b19374afad20f577)- Powered by Loom
+- [Video Presentation Link](https://www.loom.com/share/865d4fa527cd410db11f4f2931f4cc98)- Powered by Loom
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
