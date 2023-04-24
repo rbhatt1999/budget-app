@@ -17,6 +17,8 @@
   - [🛠 Built With ](#-built-with-)
   - [🛠 Tech Stack ](#-tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo](#live-demo)
+  - [🚀 Video Presentation](#presentation)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -47,6 +49,16 @@ This app is build with Ruby on Rails and Postgresql.
 > - Navigation buttons for moving between pages.
 > - Ability to add new categories with mandatory name and icon fields.
 > - Ability to add new transactions with mandatory name, amount, and category fields.
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://budget-6lkf.onrender.com/)- Powered by Render
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Video Presentation <a name="presentation"></a>
+
+- [Video Presentation Link](https://www.loom.com/share/a57474cdf4d04160b19374afad20f577)- Powered by Loom
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
