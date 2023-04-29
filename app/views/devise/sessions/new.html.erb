@@ -1,0 +1,27 @@
+<section class = "flex-column">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <nav class="navbar-container">
+  <%=link_to '/' do%>
+  <i class="fa-sharp fa-solid fa-arrow-left white-color"></i>
+  <%end%>
+  <h5 class="white-color">LOGIN</h5>
+  <div class="actions">
+    <%= f.submit "Log in", class: "login-button" %>
+  </div>
+  </nav>
+  <p class="notice text-align-center"><%= notice %></p>
+  <p class = "text-align-center"><%= alert %></p>
+  <div class="field first-field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+  </div>
+<% end %>
+
+<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  <%= link_to "Forgot your password?", new_password_path(resource_name), class: "forget-password text-align-center light-grey-color" %><br />
+<% end %>
+
+</section>

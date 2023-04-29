@@ -1,0 +1,34 @@
+<section class="flex-column height-full">
+<nav class="navbar-container justify-content-between">
+  <%=link_to categories_path do%>
+  <i class="fa-sharp fa-solid fa-arrow-left white-color"></i>
+  <%end%>
+  <h5 class="white-color">ADD CATEGORIES</h5>
+  <div></div>
+</nav>
+<%= form_with model: @category, url: categories_path, class: "new-category" do |form| %>
+  <div>
+    <% if @category.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
+      <ul>
+        <% @category.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field first-field">
+    <%= form.text_field :name, placeholder: "Category name"%>
+  </div>
+
+  <div class="field last-field">
+    <%= form.text_field :icon, placeholder: "Link for icon" %>
+  </div>
+  </div>
+
+  <div class="save-catagory">
+    <%= form.submit "Save", class: "new-catagory-container" %>
+  </div>
+<% end %>
+</section>

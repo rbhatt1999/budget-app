@@ -1,0 +1,29 @@
+<section class = "flex-column">
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <nav class="navbar-container">
+  <%=link_to '/' do%>
+  <i class="fa-sharp fa-solid fa-arrow-left white-color"></i>
+  <%end%>
+  <h5 class="white-color">REGISTER</h5>
+  <div class="actions">
+    <%= f.submit "Sign up", class: "login-button" %>
+  </div>
+  </nav>
+  <p class="notice text-align-center"><%= notice %></p>
+  <p class = "text-align-center"><%= alert %></p>
+  <div class="field">
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Name" %>
+  </div>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password (6 characters minimum)" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password" %>
+  </div>
+<% end %>
+</section>

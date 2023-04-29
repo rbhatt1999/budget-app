@@ -1,0 +1,276 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+body {
+  background-color: #f5f6f8;
+}
+
+h2,
+h3,
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.text-align-center {
+  text-align: center;
+  align-self: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-field {
+  margin-top: 5px;
+}
+
+.new_user input {
+  border: none;
+  border-radius: 0;
+}
+
+.new-category {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.new-category input {
+  border: none;
+  border-radius: 0;
+}
+
+.save-catagory input {
+  width: auto !important;
+  height: auto !important;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.new-category div input {
+  width: 100%;
+  height: 40px;
+}
+
+.new-category div select {
+  width: 100%;
+  height: 40px;
+}
+
+.grey-color {
+  color: var(--grey);
+}
+
+.light-grey-color {
+  color: #c3c3c3;
+  font-weight: lighter;
+}
+
+.field {
+  border-top: rgb(232, 232, 232) 1px solid;
+}
+
+.field:last-child,
+.last-field {
+  border-bottom: rgb(232, 232, 232) 1px solid;
+}
+
+:root {
+  --blue: #3778c2;
+  --green: #5fb523;
+  --grey: #434b54;
+  --light-grey: #efefef;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.blue-button {
+  display: inline;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.grey-button {
+  color: var(--grey);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  align-self: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: end;
+  gap: 150px;
+}
+
+.home-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--grey);
+}
+
+.navbar-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--blue);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container i {
+  font-size: 1.5rem;
+}
+
+.white-color {
+  color: white !important;
+}
+
+.new_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+}
+
+.new_user div input {
+  width: 100%;
+  height: 40px;
+}
+
+input::placeholder {
+  color: #c5c5c5;
+}
+
+.login-button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  font-weight: lighter;
+}
+
+.forget-password {
+  margin-top: 20px;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.height-full {
+  height: 100vh;
+}
+
+.save-catagory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--green);
+  padding: 10px;
+}
+
+.new-catagory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--green);
+  color: white;
+  font-size: 20px;
+}
+
+.new-catagory-container div {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.purchases-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.y-scroll {
+  overflow-y: scroll;
+}

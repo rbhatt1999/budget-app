@@ -1,0 +1,9 @@
+  <%=link_to category_path(category), class: "category-item" do%> 
+  <p class= "d-flex justify-content-start align-items-center">
+    <img src="<%= category.icon %>" style = "width: 50px; height: 50px;">
+    <strong><%= category.name.capitalize() %></strong>
+  </p>
+  <p>
+    $<%= category.purchases.map{|s| s.amount}.sum %>
+  </p>
+  <%end%>
