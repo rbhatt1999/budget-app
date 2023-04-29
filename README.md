@@ -68,7 +68,7 @@ This app is build with Ruby on Rails and Postgresql.
 
 ## UML Diagram :
 
-<img src = 'https://raw.githubusercontent.com/microverseinc/curriculum-rails/main/capstone/images/erd_diagram.png?token=GHSAT0AAAAAACBWOYRNTHBCOXB5FWIF3EYKZCFPXHA'>
+<img src = './app/assets/images/erd_diagram.png'>
 
 ## To get a local copy up and running, follow these steps.
 
